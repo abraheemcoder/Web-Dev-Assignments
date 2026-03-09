@@ -94,9 +94,8 @@ CSS Assignments
     Netlify: https://ass-15-upwork-clone-ui.netlify.app/
     GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/ac5809a84c34b9d5e09957c23d71e70bcc0bd06d/CSS-Assignments/Assignment_15%20(Upwork%20Clone%20UI)
 
-16)Assignment_16 (Linkedin Clone)
+16)Assignment_16 (Linkedin Clone UI)
     GitHub: https://github.com/abraheemcoder/Linkedin-Clone.git
-    GitHub Live: https://abraheemcoder.github.io/Linkedin-Clone/
     Netlify: https://ass-16-linked-in-clone.netlify.app/
 
 JavaScript-Assignments
