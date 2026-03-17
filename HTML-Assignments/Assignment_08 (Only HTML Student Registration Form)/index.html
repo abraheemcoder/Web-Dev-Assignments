@@ -1,187 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body style="background-color: midnightblue;">
-    <header>
-        <a href='/registration-login-form-assignment_08/'>
-            <img src="images/back-img-without-bg.png" alt="Back to Home button image" width="40">
-        </a>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Form</title>
+        <style>
+            body {
+                background-color: #480f77fd;
+            }
 
-    <main style="color: whitesmoke;">
-        <div style="text-align: center;">
-            <img src="images/smit-logo.png" alt="Smit logo image" width="200">
-            <h1>Students Registration Form</h1>
-        </div>
+            label, td, th, h1 {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Student Registration Form</h1>
 
-        <div>
             <form action="">
-                <table align="center" cellpadding="10">
-                    <tr>
-                       <td><label for="first-name">First Name: </label></td>
-                       <td><input type="text" name="first-name" id="first-name" placeholder="Enter your first name" maxlength="30" required> (max 30 characters a-z and A-Z)</td>
-                    </tr>
+                <table cellpadding="10">
 
+                    <!-- First Name -->
                     <tr>
-                       <td><label for="last-name">Last Name: </label></td>
-                       <td><input type="text" name="last-name" id="last-name" placeholder="Enter your last name" maxlength="30" required> (max 30 characters a-z and A-Z)</td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="email">Email ID: </label></td>
-                       <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="phone-number">Phone Number: </label></td>
-                       <td><input type="number" name="phone-number" id="phone-number" placeholder="Enter Phone number" maxlength="10" required> (10 Digits Number)</td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="birth-date">Date of Birth: </label></td>
-                       <td><input type="date" name="birth-date" id="birth-date"></td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="gender">Gender: </label></td>
-                       <td>
-                        Male<input type="radio" name="gender" id="gender" value="m" checked>
-                        Female<input type="radio" name="gender" id="gender" value="f">
-                       </td>
-                    </tr>
-
-                    <tr>
-                        <td><label for="address">Address: </label></td>
-                        <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="city-name">City: </label></td>
-                       <td><input type="text" name="city-name" id="city-name" placeholder="Enter your city name" maxlength="30" required> (max 30 characters a-z and A-Z)</td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="postal-code">Postal Code: </label></td>
-                       <td><input type="number" name="postal-code" id="postal-code" placeholder="Postal code" maxlength="6" required> (6 Digits Numbers)</td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="state">State: </label></td>
-                       <td><input type="text" name="state" id="state" placeholder="Enter the state" required maxlength="30"> (max 30 characters a-z and A-Z)</td>
-                    </tr>
-
-                    <tr>
-                       <td><label for="country-name">Country: </label></td>
-                       <td><input type="text" name="country-name" id="country-name" placeholder="Enter the country name" required></td>
-                    </tr>
-
-                    <tr>
-                        <td>Hobbies</td>
                         <td>
-                            <label for="drawing">Drawing</label>
-                            <input type="checkbox" name="drawing" id="drawing">
+                            <label for="first-name">First Name:</label>
+                        </td>
 
-                            <label for="singing">Singing</label>
-                            <input type="checkbox" name="singing" id="singing">
-
-                            <label for="dancing">Dancing</label>
-                            <input type="checkbox" name="dancing" id="dancing">
-
-                            <label for="sketching">Sketching</label>
-                            <input type="checkbox" name="sketching" id="sketching">
-                            <br>
-                            <label for="other">Others</label>
-                            <input type="checkbox" name="other" id="other">
-                            <input type="text" name="specify" id="specify" placeholder="Please spicify">
+                        <td>
+                            <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" maxlength="30" autofocus required> (max 30 characters a-z and A-Z)
                         </td>
                     </tr>
 
+                    <!-- Last Name -->
                     <tr>
-                        <td>Qualification: </td>
+                        <td>
+                            <label for="last-name">Last Name:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" maxlength="30" required> (max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+
+                    <!-- Email Address -->
+                    <tr>
+                        <td>
+                            <label for="email">Email Address:</label>
+                        </td>
+
+                        <td>
+                            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                        </td>
+                    </tr>
+
+                    <!-- Phone Number -->
+                    <tr>
+                        <td>
+                            <label for="phone-number">Phone Number:</label>
+                        </td>
+
+                        <td>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="Enter your phone number" maxlength="11" pattern="[0-9]{11}" required > (11 Digits Number)
+                        </td>
+                    </tr>
+
+                    <!-- Date of Brith: -->
+                    <tr>
+                        <td>
+                            <label for="dob">Date of Birth:</Data></label>
+                        </td>
+
+                        <td>
+                            <input type="date" name="dob" id="dob" required>
+                        </td>
+                    </tr>
+
+                    <!-- Gender -->
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+                        </td>
+
+                        <td>
+                            <!-- Male Radio-btn -->
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="male" id="male">
+                            
+                            <!-- Female Radio-btn -->
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" value="female" id="female">
+                        </td>
+                    </tr>
+
+                    <!-- Address -->
+                    <tr>
+                        <td>
+                            <label for="address">Address</label>
+                        </td>
+
+                        <td>
+                            <textarea name="address" id="address" placeholder="Enter your address" rows="3"
+                            cols="30" required></textarea>
+                        </td>
+                    </tr>
+
+                    <!-- Country -->
+                    <tr>
+                        <td>
+                            <label for="country">Country:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="country" id="country" placeholder="Enter your country name" maxlength="30" required> (max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+
+                    <!-- State -->
+                    <tr>
+                        <td>
+                            <label for="state">State:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="state" id="state" placeholder="Enter your state" maxlength="30" required> (max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+
+                    <!-- City -->
+                    <tr>
+                        <td>
+                            <label for="city">City:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="city" id="city" placeholder="Enter your city name" maxlength="30" required> (max 30 characters a-z and A-Z)
+                        </td>
+                    </tr>
+
+                    <!-- Postal code -->
+                    <tr>
+                        <td>
+                            <label for="postal-code">Postal Code:</label>
+                        </td>
+                            
+                        <td>
+                            <input type="number" name="postal-code" id="postal-code" placeholder="Enter your postal code" maxlength="6" pattern="[0-9]{6}" required > (6 Digits Number)
+                        </td>
+                    </tr>
+
+                    <!-- Hobbies -->
+                    <tr>
+                        <td>
+                            <label for="hobbies">Hobbies</label>
+                        </td>
+
+                        <td>
+                            <!-- Drawing Checkbox -->
+                            <label for="drawing">Drawing</label>
+                            <input type="checkbox" name="drawing" id="drawing">
+                            
+                            <!-- Singing Checkbox -->
+                            <label for="singing">Singing</label>
+                            <input type="checkbox" name="singing" id="singing">
+                            
+                            <!-- Dancing Checkbox -->
+                            <label for="dancing">Dancing</label>
+                            <input type="checkbox" name="dancing" id="dancing">
+
+                            <!-- Sketching Checkbox -->
+                            <label for="sketching">Sketching</label>
+                            <input type="checkbox" name="sketching" id="sketching">
+
+                            <br>
+
+                            <!-- Other Checkbox -->
+                            <label for="other">Other</label>
+                            <input type="checkbox" name="other" id="other">
+                            <input type="text" name="other" id="other" placeholder="Please specify">
+                        </td>
+                    </tr>
+
+                    <!-- Qualification -->
+                    <tr>
+                        <td>
+                            <label for="qualification">Qualification:</label>
+                        </td>
+
                         <td>
                             <table>
+
+                                <!-- Heading Row -->
                                 <tr>
-                                    <th>S.No </th>
-                                    <th>Examination </th>
-                                    <th><label for="board">Board</label> </th>
-                                    <th><label for="percentage">Percentage</label> </th>
-                                    <th><label for="passing">Year of Passing</label> </th>
+                                    <th>S.No</th>
+                                    <th>Examination</th>
+                                    <th>Board</th>
+                                    <th>Percentage</th>
+                                    <th>Passing Year</th>
                                 </tr>
 
+                                <!-- Matric Row -->
                                 <tr>
+                                    <!-- S.No -->
                                     <td>1.</td>
-                                    <td>Class X</td>
-                                    <td><input type="text" name="board" id="board" maxlength="10"></td>
-                                    <td><input type="number" name="percentage" id="percentage"></td>
-                                    <td><input type="text" name="passing" id="passing"></td>
+
+                                    <!-- Examination -->
+                                    <td>Matric</td>
+
+                                    <!-- Board -->
+                                    <td><input type="text" name="matric-board" id="matric-board" required></td>
+
+                                    <!-- Percentage -->
+                                    <td><input type="text" name="matric-percentage" id="matric-percentage" required></td>
+
+                                    <!-- Passing Year -->
+                                    <td><input type="text" name="matric-passing-year" id="matric-passing-year" required></td>
                                 </tr>
 
+                                <!-- Intermediate Row -->
                                 <tr>
+                                    <!-- S.No -->
                                     <td>2.</td>
-                                    <td>Class XII</td>
-                                    <td><input type="text" name="board" id="board" maxlength="10"></td>
-                                    <td><input type="number" name="percentage" id="percentage"></td>
-                                    <td><input type="text" name="passing" id="passing"></td>
-                                </tr>
 
+                                    <!-- Examination -->
+                                    <td>Intermediate</td>
+
+                                    <!-- Board -->
+                                    <td><input type="text" name="intermediate -board" id="intermediate -board" required></td>
+
+                                    <!-- Percentage -->
+                                    <td><input type="text" name="intermediate -percentage" id="intermediate -percentage" required></td>
+
+                                    <!-- Passing Year -->
+                                    <td><input type="text" name="intermediate -passing-year" id="intermediate -passing-year" required></td>
+                                </tr>
+                                
+                                <!-- Graduation Row -->
                                 <tr>
+                                    <!-- S.No -->
                                     <td>3.</td>
+
+                                    <!-- Examination -->
                                     <td>Graduation</td>
-                                    <td><input type="text" name="board" id="board" maxlength="10"></td>
-                                    <td><input type="number" name="percentage" id="percentage"></td>
-                                    <td><input type="text" name="passing" id="passing"></td>
-                                </tr>
 
-                                <tr>
-                                    <td>4.</td>
-                                    <td>Masters</td>
-                                    <td><input type="text" name="board" id="board" maxlength="10"></td>
-                                    <td><input type="number" name="percentage" id="percentage"></td>
-                                    <td><input type="text" name="passing" id="passing"></td>
-                                </tr>
+                                    <!-- Board -->
+                                    <td><input type="text" name="graduation-board" id="graduation-board" required></td>
 
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td align="center">(10 char max)</td>
-                                    <td align="center">(Upto 2 decimal)</td>
-                                    <td></td>
+                                    <!-- Percentage -->
+                                    <td><input type="text" name="graduation-percentage" id="graduation-percentage" required></td>
+
+                                    <!-- Passing Year -->
+                                    <td><input type="text" name="graduation-passing-year" id="graduation-passing-year" required></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
 
+                    <!-- Courses -->
                     <tr>
-                        <td>Courses Applied For:</td>
                         <td>
-                            <select name="courses" id="courses">
-                                <option value="">Select any course</option>
-                                <option value="B.A">B.A</option>
-                                <option value="bscs">BSCS</option>
-                                <option value="b.com">B.com</option>
+                            <label for="course">Courses:</label>
+                        </td>
+
+                        <td>
+                            <select name="course" id="course" required>
+                                <option disabled selected>Select your course</option>
+                                <option value="">AI</option>
+                                <option value="">Web development</option>
+                                <option value="">App development</option>
+                                <option value="">Graphic designing</option>
+                                <option value="">Digital marketing</option>
                             </select>
                         </td>
                     </tr>
 
+                    <!-- Picture upload btn -->
                     <tr>
-                        <td><label for="picture">Upload your Picture: <br>(only .png, .jpg, .jpeg)</label></td>
-                        <td><input type="file" name="picture" id="picture"></td>
+                        <td>
+                            <label for="picture">Upload your picture: 
+                            <br>(only .png, .jpg, .jpeg)</label>
+                        </td>
+
+                        <td><input type="file" name="" id=""></td>
                     </tr>
 
+                    <!-- Submit/ Reset btn -->
                     <tr>
                         <td colspan="2" align="center">
+                            <!-- Submit btn -->
                             <input type="submit" value="submit">
+                            
+                            <!-- Reset btn -->
                             <input type="reset" value="reset">
                         </td>
                     </tr>
                 </table>
             </form>
-        </div>
-    </main>
-</body>
+        </center>
+    </body>
 </html>
