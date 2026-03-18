@@ -2,56 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial;
+
 }
 body {
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(135deg, #7f279c 0%, #2e279d 100%);
-    font-family: Arial;
+    background: linear-gradient(135deg, #7f279c 0%, #2e279d 100%);
 }
+
+/* Login form container */
 .container {
     width: 400px;
-    height:400px;
     background-color: rgba(255, 255, 255, 0.808);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 10px 50px;
     padding: 15px;
 }
+
+/* Login heading */
 h2 {
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
+/* Email & Password input */
 label {
     display: block;
     font-weight: bold;
-    font-size: 18Px;
+    font-size: 20Px;
     margin-bottom: 5px;
 }
 input {
     width: 100%;
-    padding: 15px;
+    padding: 12px 15px;
     margin-bottom: 15px;
+    border: 1.5px solid #8400ff;
     border-radius: 8px;
     outline: none;
     font-size: 18px;
 }
+input:focus {
+    border: 2px solid #8400ff;
+}
+
+/* Login btn */
 button {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 15px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 12px 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 20px;
-    font-size: 18px;
-    background-color: rgb(99, 15, 133);
+    border-radius: 18px;
+    font-size: 20px;
+    background-color: #630f85;
     color: white;
+    border: none;
     cursor: pointer;
 }
+button:hover {
+    background-color: #640f85d2;
+}
+
+/* Forget password */
 p {
     text-align: center;
     margin-top: 5px;

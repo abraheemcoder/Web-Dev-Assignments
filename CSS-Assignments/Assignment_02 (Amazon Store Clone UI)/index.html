@@ -1,151 +1,148 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Amazon Clone UI</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <header>
-                <!-- 1st Navbar -->
-                <div id="top" class="navbar">
-                    <!-- Amazon logo -->
-                    <div class="nav-logo">
-                        <div class="logo border"></div>
-                    </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazon Clone UI</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <!-- 1st Navbar section-->
+            <div id="top" class="navbar">
+                <!-- Nav Amazon logo -->
+                <div class="nav-logo">
+                    <div class="logo border"></div>
+                </div>
 
-                    <!-- Country Option -->
-                    <div class="nav-address border">
-                        <p class="nav-add-delivery">Deliver to</p>
-                        <div class="add-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p class="nav-add-country">Pakistan</p>
-                        </div>
+                <!-- Nav Country Option -->
+                <div class="nav-address border">
+                    <p class="nav-add-delivery">Deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="nav-add-country">Pakistan</p>
                     </div>
+                </div>
 
-                    <!-- Search Bar -->
-                    <div class="nav-search">
-                        <select class="search-categories active-yellow-box-shadow" name="categories">
-                            <option value="categories" >All</option>
-                            <option value="categories">Arts & Crafts</option>
-                            <option value="categories">Automotive</option>
-                            <option value="categories">Baby</option>
-                            <option value="categories">Beauty & Personal Care</option>
-                            <option value="categories">Books</option>
-                            <option value="categories">Boys's Fashion></option>
-                            <option value="categories">Computers</option>
-                            <option value="categories">Deals</option>
-                            <option value="categories">Digital Music</option>
-                            <option value="categories">Electronics</option>
-                            <option value="categories">Girls's Fashion</option>
-                            <option value="categories">Health & Household</option>
-                            <option value="categories">Home & Kitchen</option>
-                            <option value="categories">Industrial & Scientific</option>
-                            <option value="categories">Kindle Store</option>
-                            <option value="categories">Luggage</option>
-                            <option value="categories">Men's Fashion</option>
-                            <option value="categories">Movies & TV</option>
-                            <option value="categories">Music, CDs & Vinyl</option>
-                            <option value="categories">Pet Supplies</option>
-                            <option value="categories">Prime Video</option>
-                            <option value="categories">Software</option>
-                            <option value="categories">Sports & Outdoors</option>
-                            <option value="categories">Tools & Home Improvement</option>
-                            <option value="categories">Toys & Games</option>
-                            <option value="categories">Video Games</option>
-                            <option value="categories">Women's Fashion</option>
-                        </select>
-                        <input class="search-input" type="search" placeholder="Search Amazon">
-                        <div class="search-icon active-yellow-box-shadow">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
+                <!-- Nav Search Bar -->
+                <div class="nav-search">
+                    <select class="search-categories active-yellow-box-shadow" name="categories">
+                        <option value="categories" >All</option>
+                        <option value="categories">Arts & Crafts</option>
+                        <option value="categories">Automotive</option>
+                        <option value="categories">Baby</option>
+                        <option value="categories">Beauty & Personal Care</option>
+                        <option value="categories">Books</option>
+                        <option value="categories">Boys's Fashion></option>
+                        <option value="categories">Computers</option>
+                        <option value="categories">Deals</option>
+                        <option value="categories">Digital Music</option>
+                        <option value="categories">Electronics</option>
+                        <option value="categories">Girls's Fashion</option>
+                        <option value="categories">Health & Household</option>
+                        <option value="categories">Home & Kitchen</option>
+                        <option value="categories">Industrial & Scientific</option>
+                        <option value="categories">Kindle Store</option>
+                        <option value="categories">Luggage</option>
+                        <option value="categories">Men's Fashion</option>
+                        <option value="categories">Movies & TV</option>
+                        <option value="categories">Music, CDs & Vinyl</option>
+                        <option value="categories">Pet Supplies</option>
+                        <option value="categories">Prime Video</option>
+                        <option value="categories">Software</option>
+                        <option value="categories">Sports & Outdoors</option>
+                        <option value="categories">Tools & Home Improvement</option>
+                        <option value="categories">Toys & Games</option>
+                        <option value="categories">Video Games</option>
+                        <option value="categories">Women's Fashion</option>
+                    </select>
+                    <input class="search-input" type="search" placeholder="Search Amazon">
+                    <div class="search-icon active-yellow-box-shadow">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
+                </div>
 
-                    <!-- Langauge Selector -->
-                     <!-- <div class="Langauge-selector">
-                        <select name="langauge">
-                            <option value="langauge">
-                                <FontAwesomeIcon :icon="byPrefixAndName.fas['flag-checkered']"/>
-                                EN
-                            </option>
-                        </select>
-                     </div> -->
+                <!-- Langauge Selector -->
+                <!-- <div class="Langauge-selector">
+                    <select name="langauge">
+                        <option value="langauge">
+                            <FontAwesomeIcon :icon="byPrefixAndName.fas['flag-checkered']"/>
+                            EN
+                        </option>
+                    </select>
+                </div> -->
                     
-                     <!-- Sign in -->
-                    <div class="nav-signin border">
-                        <p><span>Hello, Sign in</span></p>
-                        <p class="nav-second">Account & Lists</p>
-                    </div>
-
-                    <!-- Returns & Orders -->
-                    <div class="nav-orders border">
-                        <p><span>Returns</span></p>
-                        <p class="nav-second">& Orders</p>
-                    </div>
-
-                    <!-- Cart -->
-                    <div class="nav-cart border">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Cart
-                    </div>
+                <!-- Sign in -->
+                <div class="nav-signin border">
+                    <p><span>Hello, Sign in</span></p>
+                    <p class="nav-second">Account & Lists</p>
                 </div>
+
+                <!-- Returns & Orders -->
+                <div class="nav-orders border">
+                    <p><span>Returns</span></p>
+                    <p class="nav-second">& Orders</p>
+                </div>
+
+                <!-- Cart -->
+                <div class="nav-cart border">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </div>
+            </div>
                 
-                <!-- 2nd Navbar Panel -->
-                <div class="nav-panel">
-                    <!-- All -->
-                    <div class="nav-panel-all border">
-                        <i class="fa-solid fa-bars"></i>
-                        All
-                    </div>
-
-                    <!-- Option -->
-                    <div class="nav-panel-options">
-                        <p class="border">Today's Deals</p>
-                        <p class="border">Prime Video</p>
-                        <p class="border">Registry</p>
-                        <p class="border">Gift Cards</p>
-                        <p class="border">Customer Service</p>
-                        <p class="border">Sell</p>
-                    </div>
-                </div>
-            </header>
-            <main>
-                <!-- Page Content -->
-                <div class="page-content">
-                    <!-- Hero Section -->
-                    <div class="hero-section"></div>
+            <!-- 2nd Navbar section -->
+            <div class="nav-panel">
+                <!-- All -->
+                <div class="nav-panel-all border">
+                    <i class="fa-solid fa-bars"></i>
+                    All
                 </div>
 
+                <!-- Option -->
+                <div class="nav-panel-options">
+                    <p class="border">Today's Deals</p>
+                    <p class="border">Prime Video</p>
+                    <p class="border">Registry</p>
+                    <p class="border">Gift Cards</p>
+                    <p class="border">Customer Service</p>
+                    <p class="border">Sell</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Hero Section -->
+                <div class="hero-section"></div>
+            
                 <!-- Shop Section -->
                 <div class="shop-section">
                     <!-- Shop Row 01 -->
                     <div class="shop-row_01">
-                        <!-- Box 01 -->
+                        <!-- Shop Row 01 Box 01 -->
                         <div class="box box1">
                             <p>Get your game on</p>
                             <img src="Shop-gaming.jpg" alt="pc image">
                             <a href="">Shop gaming</a>
                         </div>
 
-                        <!-- Box 02 -->
+                        <!-- Shop Row 01 Box 02 -->
                         <div class="box box2">
                             <p class="box2-para">Shop for your home essentials</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Cleaning_Tool.jpg" alt="Cleaning Tools">
-                                        <p>Cleaning Tools</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Home_Storage.jpg" alt="Home Storage">
-                                        <p>Home Storage</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Cleaning_Tool.jpg" alt="Cleaning Tools">
+                                    <p>Cleaning Tools</p>
+                                </a>
+                                <a href="">
+                                    <img src="Home_Storage.jpg" alt="Home Storage">
+                                    <p>Home Storage</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
                                     <a href="">
                                         <img src="Home_Decor.jpg" alt="Home Decor">
                                         <p>Home Decor</p>
@@ -155,55 +152,50 @@
                                         <img src="Bedding.jpg" alt="Bedding">
                                         <p>Bedding</p>
                                     </a>
-                                </div>
+                            </div>
                             <a href="" class="box2-anchor">Discover more in Home</a>
                         </div>
 
-                        <!-- Box 03 -->
+                        <!-- Shop Row 01 Box 03 -->
                         <div class="box box2">
                             <p class="box2-para">Shop Fashion for less</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Jeans under $50.jpg" alt="Jeans under $50">
-                                        <p>Jeans under $50</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Tops under $25.jpg" alt="Tops under $25">
-                                        <p>Tops under $25</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Dresses under $30.jpg" alt="Dresses under $30">
-                                        <p>Dresses under $30</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Shoes under $50.jpg" alt="Shoes under $50">
-                                        <p>Shoes under $50</p>
-                                    </a>
-                                </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Jeans under $50.jpg" alt="Jeans under $50">
+                                    <p>Jeans under $50</p>
+                                </a>
+                                <a href="">
+                                    <img src="Tops under $25.jpg" alt="Tops under $25">
+                                    <p>Tops under $25</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Dresses under $30.jpg" alt="Dresses under $30">
+                                    <p>Dresses under $30</p>
+                                </a>
+                                <a href="">
+                                    <img src="Shoes under $50.jpg" alt="Shoes under $50">
+                                    <p>Shoes under $50</p>
+                                </a>
+                            </div>
                             <a href="" class="box2-anchor">Discover more in Home</a>
                         </div>
 
-                        <!-- Box 04 -->   
+                        <!-- Shop Row 01 Box 04 -->   
                         <div class="box box2">
                             <p class="box2-para">New home arrivals under $50</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Kitchen & Dining.jpg" alt="Kitchen & Dining">
-                                        <p>Cleaning Tools</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Home improvement.jpg" alt="Home improvement">
-                                        <p>Home Storage</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Kitchen & Dining.jpg" alt="Kitchen & Dining">
+                                    <p>Cleaning Tools</p>
+                                </a>
+                                <a href="">
+                                    <img src="Home improvement.jpg" alt="Home improvement">
+                                    <p>Home Storage</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
                                     <a href="">
                                         <img src="Decor.jpg" alt="Decor">
                                         <p>Home Decor</p>
@@ -213,218 +205,213 @@
                                         <img src="Bedding & Bath.jpg" alt="Bedding & Bath">
                                         <p>Bedding & Bath</p>
                                     </a>
-                                </div>
+                            </div>
                             <a href="" class="box2-anchor">Shop the latest from Home</a>
                         </div>   
                     </div>
 
                     <!-- Shop Row 02 -->
                     <div class="shop-row_01">
-
-                        <!-- Box 01 -->
+                        <!-- Shop Row 02 Box 01 -->
                         <div class="box box2">
                             <p class="box2-para">Wireless Tech</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Smartphone.jpg" alt="Smartphones">
-                                        <p>Smartphones</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Watches.jpg" alt="Watches">
-                                        <p>Watches</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Headphone.jpg" alt="Headphones">
-                                        <p>Headphones</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Tablet.jpg" alt="Tablets">
-                                        <p>Tablets</p>
-                                    </a>
-                                </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Smartphone.jpg" alt="Smartphones">
+                                    <p>Smartphones</p>
+                                </a>
+                                <a href="">
+                                    <img src="Watches.jpg" alt="Watches">
+                                    <p>Watches</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Headphone.jpg" alt="Headphones">
+                                    <p>Headphones</p>
+                                </a>
+                                <a href="">
+                                    <img src="Tablet.jpg" alt="Tablets">
+                                    <p>Tablets</p>
+                                </a>
+                            </div>
                             <a href="" class="box2-anchor">Discover more</a>
                         </div>
 
-                        <!-- Box 02 -->
+                        <!-- Shop Row 02 Box 02 -->
                         <div class="box box2">
                             <p class="box2-para">Gear up to get fit</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Clothing.jpg" alt="Clothing">
-                                        <p>Clothing</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Trackers.jpg" alt="Trackers">
-                                        <p>Trackers</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Equipment.jpg" alt="Equipment">
-                                        <p>Equipment</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Deals.jpg" alt="Deals">
-                                        <p>Deals</p>
-                                    </a>
-                                </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Clothing.jpg" alt="Clothing">
+                                    <p>Clothing</p>
+                                </a>
+                                <a href="">
+                                    <img src="Trackers.jpg" alt="Trackers">
+                                    <p>Trackers</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Equipment.jpg" alt="Equipment">
+                                    <p>Equipment</p>
+                                </a>
+                                <a href="">
+                                    <img src="Deals.jpg" alt="Deals">
+                                    <p>Deals</p>
+                                </a>
+                            </div>
                             <a href="" class="box2-anchor">Discover more</a>
                         </div>
 
-                        <!-- Box 03 -->
+                        <!-- Shop Row 02 Box 03 -->
                         <div class="box box2">
                             <p class="box2-para">Gaming merchandise</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Apparel.jpg" alt="Apparel">
-                                        <p>Apparel</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Hat.jpg" alt="Hats">
-                                        <p>Hats</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Figure.jpg" alt="Action Figures">
-                                        <p>Action Figures</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Mug.jpg" alt="Mugs">
-                                        <p>Mugs</p>
-                                    </a>
-                                </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Apparel.jpg" alt="Apparel">
+                                    <p>Apparel</p>
+                                </a>
+                                <a href="">
+                                    <img src="Hat.jpg" alt="Hats">
+                                    <p>Hats</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Figure.jpg" alt="Action Figures">
+                                    <p>Action Figures</p>
+                                </a>
+                                <a href="">
+                                    <img src="Mug.jpg" alt="Mugs">
+                                    <p>Mugs</p>
+                                </a>
+                            </div>
                             <a href="" class="box2-anchor">See more</a>
                         </div>
 
-                        <!-- Box 04 -->
+                        <!-- Shop Row 02 Box 04 -->
                         <div class="box box2">
                             <p class="box2-para">Deals on top categories</p>
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="Books.jpg" alt="Books">
-                                        <p>Books</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Fashion.jpg" alt="Fashion">
-                                        <p>Fashion</p>
-                                    </a>
-                                </div>
-
-                                <div class="box2-img">
-                                    <a href="">
-                                        <img src="PC.jpg" alt="PC">
-                                        <p>PC</p>
-                                    </a>
-
-                                    <a href="">
-                                        <img src="Beauty.jpg" alt="Beauty">
-                                        <p>Beauty</p>
-                                    </a>
-                                </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="Books.jpg" alt="Books">
+                                    <p>Books</p>
+                                </a>
+                                <a href="">
+                                    <img src="Fashion.jpg" alt="Fashion">
+                                    <p>Fashion</p>
+                                </a>
+                            </div>
+                            <div class="box2-img">
+                                <a href="">
+                                    <img src="PC.jpg" alt="PC">
+                                    <p>PC</p>
+                                </a>
+                                <a href="">
+                                    <img src="Beauty.jpg" alt="Beauty">
+                                    <p>Beauty</p>
+                                </a>
+                            </div>
                             <a href="" class="box2-anchor">Discover more</a>
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>    
+        </main>
 
-            <footer>
+        <footer>
+            <div class="footer-content">
+                <!-- Back to Top  section -->
                 <div class="footer-section1">
+                    <!-- Back to top btn -->
                     <div class="back-to-top">
                         <a href="#top"><p>Back to top</p></a>
                     </div>
                 </div>
-                
+
+                <!-- Amazon Links section -->
                 <div class="footer-section2">
-                    <div class="footer-panel1-box1">
-                        <p>Get to Know Us</p>
-                        <ul>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">About Amazon</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Amazon Devices</a></li>
-                            <li><a href="">Amazon Science</a></li>
-                        </ul>
-                    </div>
+                        <div class="footer-panel1-box1">
+                            <p>Get to Know Us</p>
+                            <ul>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">About Amazon</a></li>
+                                <li><a href="">Investor Relations</a></li>
+                                <li><a href="">Amazon Devices</a></li>
+                                <li><a href="">Amazon Science</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="footer-panel1-box2">
-                        <p>Make Money with Us</p>
-                        <ul>
-                            <li><a href="">Sell products on Amazon</a></li>
-                            <li><a href="">Sell on Amazon Business</a></li>
-                            <li><a href="">Sell apps on Amazon</a></li>
-                            <li><a href="">Become an Affiliate</a></li>
-                            <li><a href="">Advertise Your Products</a></li>
-                            <li><a href="">Self-Publish with Us</a></li>
-                            <li><a href="">Host an Amazon Hub</a></li>
-                            <li id="li-w"><a href="">See More Make Money with Us</a></li>
-                        </ul>
-                    </div>
+                        <div class="footer-panel1-box2">
+                            <p>Make Money with Us</p>
+                            <ul>
+                                <li><a href="">Sell products on Amazon</a></li>
+                                <li><a href="">Sell on Amazon Business</a></li>
+                                <li><a href="">Sell apps on Amazon</a></li>
+                                <li><a href="">Become an Affiliate</a></li>
+                                <li><a href="">Advertise Your Products</a></li>
+                                <li><a href="">Self-Publish with Us</a></li>
+                                <li><a href="">Host an Amazon Hub</a></li>
+                                <li id="li-w"><a href="">See More Make Money with Us</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="footer-panel1-box3">
-                        <p>Amazon Payment Products</p>
-                        <ul>
-                            <li><a href="">Amazon Business Card</a></li>
-                            <li><a href="">Shop with Points</a></li>
-                            <li><a href="">Reload Your Balance</a></li>
-                            <li><a href="">Amazon Currency Converter</a></li>
-                        </ul>
-                    </div>
+                        <div class="footer-panel1-box3">
+                            <p>Amazon Payment Products</p>
+                            <ul>
+                                <li><a href="">Amazon Business Card</a></li>
+                                <li><a href="">Shop with Points</a></li>
+                                <li><a href="">Reload Your Balance</a></li>
+                                <li><a href="">Amazon Currency Converter</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="footer-panel1-box4">
-                        <p>Let Us Help You</p>
-                        <ul>
-                            <li><a href="">Amazon and COVID-19</a></li>
-                            <li><a href="">Your Account</a></li>
-                            <li><a href="">Your Orders</a></li>
-                            <li><a href="">Shipping Rates & Policies</a></li>
-                            <li><a href="">Returns & Replacements</a></li>
-                            <li><a href="">Manage Your Content and Devices</a></li>
-                            <li><a href="">Help</a></li>
-                        </ul>
-                    </div>
+                        <div class="footer-panel1-box4">
+                            <p>Let Us Help You</p>
+                            <ul>
+                                <li><a href="">Amazon and COVID-19</a></li>
+                                <li><a href="">Your Account</a></li>
+                                <li><a href="">Your Orders</a></li>
+                                <li><a href="">Shipping Rates & Policies</a></li>
+                                <li><a href="">Returns & Replacements</a></li>
+                                <li><a href="">Manage Your Content and Devices</a></li>
+                                <li><a href="">Help</a></li>
+                            </ul>
+                        </div>
                 </div>
 
+                <!-- Amazon logo & Language section -->
                 <div class="footer-logo-btn">
-                    <div class="footer-logo">
-                        <img src="amazon_logo.png" alt="Amazon logo">
-                    </div>
+                        <div class="footer-logo">
+                            <img src="amazon_logo.png" alt="Amazon logo">
+                        </div>
 
-                    <div class="footer-lang">
-                        <a href=""><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-sort"></i></a>
-                    </div>
+                        <div class="footer-lang">
+                            <a href=""><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-sort"></i></a>
+                        </div>
 
-                    <div class="footer-currency">
-                        <a href=""><span>PKR</span> Pakistani Rupee</a>
-                    </div>
+                        <div class="footer-currency">
+                            <a href=""><span>PKR</span> Pakistani Rupee</a>
+                        </div>
 
-                    <div class="footer-country">
-                        <a href=""><img src="USA Flag icon.png" alt="USA Flag icon">United States</a>
-                    </div>
+                        <div class="footer-country">
+                            <a href=""><img src="USA Flag icon.png" alt="USA Flag icon">United States</a>
+                        </div>
                 </div>
 
+                <!-- Amazon copyright section -->
                 <div class="footer-copyright">
-                    <ul>
-                        <li><a href="">CConditions of Use</a></li>
-                        <li><a href="">Privacy Notice</a></li>
-                        <li><a href="">Consumer Health Data Privacy Disclosure</a></li>
-                        <li><a href="">Your Ads Privacy Choices</a></li>
-                    </ul>
-                    <p>&copy; 1996-2026, Amazon.com, Inc. or its affiliates</p>
+                        <ul>
+                            <li><a href="">CConditions of Use</a></li>
+                            <li><a href="">Privacy Notice</a></li>
+                            <li><a href="">Consumer Health Data Privacy Disclosure</a></li>
+                            <li><a href="">Your Ads Privacy Choices</a></li>
+                        </ul>
+                        <p>&copy; 1996-2026, Amazon.com, Inc. or its affiliates</p>
                 </div>
-            </footer>
-        </body>
-    </html>
+            </div>
+        </footer>
+    </body>
+</html>
