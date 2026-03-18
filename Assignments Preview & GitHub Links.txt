@@ -45,7 +45,7 @@ CSS Assignments
         GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/ac5809a84c34b9d5e09957c23d71e70bcc0bd06d/CSS-Assignments/Assignment_02%20(Amazon%20Store%20Clone%20UI)
         Netlify Live: https://ass-02-amazon-store-clone-ui.netlify.app/
         
-    3. Assignment_03 (Login Page UI)
+U   3. Assignment_03 (Login Page UI)
         GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/ac5809a84c34b9d5e09957c23d71e70bcc0bd06d/CSS-Assignments/Assignment_03%20(Login%20Page%20UI)
         Netlify Live: https://ass-03-login-page-ui.netlify.app/
         

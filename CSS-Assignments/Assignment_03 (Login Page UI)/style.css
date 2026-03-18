@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
-
 }
+
 body {
     width: 100%;
     height: 100vh;
@@ -14,7 +14,7 @@ body {
     background: linear-gradient(135deg, #7f279c 0%, #2e279d 100%);
 }
 
-/* Login form container */
+/* Container */
 .container {
     width: 400px;
     background-color: rgba(255, 255, 255, 0.808);
@@ -23,7 +23,7 @@ body {
     padding: 15px;
 }
 
-/* Login heading */
+/* Heading */
 h2 {
     font-size: 30px;
     text-align: center;
@@ -51,7 +51,7 @@ input:focus {
     border: 2px solid #8400ff;
 }
 
-/* Login btn */
+/* Button */
 button {
     width: 60%;
     margin-left: 20%;
