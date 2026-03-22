@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LinkedIn Login, Sign in | LinkedIn</title>
+        <link rel="icon" href="images/linkedin-favicon.png" type="image/png" sizes="32x32">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Page content -->
+        <div class="page-content">
+            <!-- Header -->
+            <header>
+                <!-- logo -->
+                <div class="logo">
+                    <h1 class="font-linkedin">Linked</h1>
+                    <img src="images/linkedin-favicon.png" alt="linkedin icon">
+                </div>
+            </header>
+
+            <!-- Main -->
+            <main>
+                <div class="login-form">
+                    <!-- Heading -->
+                    <div class="signin-heading">
+                        <h1>Sign in</h1>
+                    </div>
+
+                    <!-- Signin with google btn -->
+                    <div class="signin-google">
+                        <button><img src="images/google-logo.png" alt="Google logo" height="18"> Continue with Google</button>
+                    </div>
+
+                    <!-- Signin with ms btn -->
+                    <div class="signin-google">
+                        <button><img src="images/ms-logo.png" alt="Ms logo" height="18"> SIgn in with Microsoft</button>
+                    </div>
+
+                    <!-- Signin with apple btn -->
+                    <div class="signin-google">
+                        <button>
+                            <i class="ri-apple-fill"></i>
+                            Sign in with Apple
+                        </button>
+                    </div>
+
+                    <div class="terms">
+                        <p>By clicking Continue, you agree to LinkedIn’s <a href="">User Agreement</a>, <a href="">Privacy Policy</a>, and <a href="">Cookie Policy</a>.</p>
+                    </div>
+
+                    <div class="separator d-flex justify-content-center gap-2">
+                        <hr> <p>or</p> <hr>
+                    </div>
+
+                    <div class="email-input">
+                        <input type="text" placeholder="Email or Phone">
+                    </div>
+
+                    <div class="password-input">
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <div class="forget-password">
+                        <a href="">Forget password?</a>
+                    </div>
+
+                    <div class="keep-login">
+                        <input type="checkbox" name="keep-me-login" id="keep-me-login">
+                        <label for="keep-me-login">Keep me logged in</label>
+                    </div>
+                    
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content ">
+                    <ul class="m-0">
+                        <li class="d-flex gap align-items-center" >
+                            <p class="font-linkedin m-0 fw-bold fs-6">linked</p>
+                            <i class="ri-linkedin-box-fill fs-6 pe-2"></i>
+                            <p class="m-0">&copy;2026</p>
+                        </li>
+                        <li><a href="">User Agreement</a></li>
+                        <li><a href="">Privary policy</a></li>
+                        <li><a href="">Community Guidelines</a></li>
+                        <li><a href="">Cookies Policy</a></li>
+                        <li><a href="">Copyright Policy</a></li>
+                        <li><a href="">Send Feedback</a></li>
+                        <li>
+                            <select class="form-select" id="languages" name="languages">
+                                <option value="lang" selected disabled>Language</option>
+                                <option value="zh">Chinese</option>
+                                <option value="es">Spanish</option>
+                                <option value="en">English</option>
+                                <option value="hi">Hindi</option>
+                                <option value="ar">Arabic</option>
+                                <option value="pt">Portuguese</option>
+                                <option value="bn">Bengali</option>
+                                <option value="ru">Russian</option>
+                                <option value="ja">Japanese</option>
+                                <option value="pa">Punjabi</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

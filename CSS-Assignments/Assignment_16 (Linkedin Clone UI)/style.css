@@ -1,0 +1,173 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.font-linkedin {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+
+/* Page content */
+.page-content {
+    width: 100%;
+    height: 100vh;
+}
+
+/* logo */
+.logo {
+    width: 100%;
+    height: 82px;
+    padding: 12px 0 0 56px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #0a77b5;
+}
+.logo h1 {
+    font-size: 28px;
+    font-weight: bolder;
+}
+.logo img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Main */
+main {
+    width: 100%;
+    height: calc(100vh - 154px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 352px;
+    padding: 24px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.signin-heading {
+    padding: 4px;
+}
+
+.signin-google button,
+.signin-ms button,
+.signin-apple button {
+    width: 100%;
+    height: 44px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+}
+.signin-google button:hover,
+.signin-ms button:hover,
+.signin-apple button:hover {
+    background-color: #cfcece23;
+}
+
+.signin-apple i {
+    font-size: 18px;
+}
+
+.terms {
+    font-size: 12px;
+}
+.terms a {
+    text-decoration: none;
+    color: #1266bf;
+}
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.separator p {
+    padding-top: 4px;
+}
+
+hr {
+    width: 45%;
+}
+
+.email-input input,
+.password-input input {
+    width: 100%;
+    height: 52px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+.email-input {
+    margin-bottom: 25px;
+}
+.password-input {
+    margin-bottom: 10px;
+}
+
+.forget-password a {
+    font-weight: 500;
+    color: #1266bf;
+    text-decoration: none;
+}
+.forget-password a:hover {
+    text-decoration: underline;
+}
+
+.keep-login input::checkmark {
+    color: black;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 72px;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+.footer-content a {
+    color: black;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.form-select {
+    width: 90px;
+    font-size: 12px;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    background-color: #ffffff00;
+}
