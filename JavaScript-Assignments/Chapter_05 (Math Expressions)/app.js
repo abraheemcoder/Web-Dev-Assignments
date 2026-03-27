@@ -122,8 +122,8 @@ document.getElementById("question5-heading").innerHTML = "Table of " + number;
 // ++: For increment
 // loop to Generate Table
 let result = "";
-for(let multipleBy = 1; multipleBy <= 10; multipleBy++){
-    result += number + "x" + multipleBy + "=" + (number * multipleBy) + "<br>";
+for(let i = 1; i <= 10; i++){
+    result += number + "x" + i + "=" + (number * i) + "<br>";
 }
 
 // Result
