@@ -101,3 +101,8 @@ U   3. Assignment_03 (Login Page UI)
 
 JavaScript-Assignments
     GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/ac5809a84c34b9d5e09957c23d71e70bcc0bd06d/JavaScript-Assignments
+
+    1. Chapter_01 to 20 (JS Questions)
+       GitHub:
+
+    2. Chapter_21 to 40 (JS Questions)
