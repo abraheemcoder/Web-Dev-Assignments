@@ -103,6 +103,7 @@ JavaScript-Assignments
     GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/ac5809a84c34b9d5e09957c23d71e70bcc0bd06d/JavaScript-Assignments
 
     1. Chapter_01 to 20 (JS Questions)
-       GitHub:
+       GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/3fa76e23ac5438c4538f3612ec5ae45ced1994d9/JavaScript-Assignments/Chapter_01%20to%2020
 
     2. Chapter_21 to 40 (JS Questions)
+       GitHub: https://github.com/abraheemcoder/Web-Dev-Assignments/tree/3fa76e23ac5438c4538f3612ec5ae45ced1994d9/JavaScript-Assignments/Chapter_21%20to%2040
