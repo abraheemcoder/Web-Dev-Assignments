@@ -1,0 +1,51 @@
+/* Font family link */
+@import url('');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-text-color: ;
+    --secondary-text-color: ;
+    --accent-color: ;
+    --accent-color-dark: ;
+    --padding-inline-section: ;
+}
+
+body {
+   font-family: ;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: ;
+}
+h2 {
+    font-size: ;
+}
+h3 {
+    font-size: ;
+}
+h4 {
+    font-size: ;
+}
+
+p {
+    font-family: ;
+    font-size: ;
+    color: var(--secondary-text-color);
+    line-height: ;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+

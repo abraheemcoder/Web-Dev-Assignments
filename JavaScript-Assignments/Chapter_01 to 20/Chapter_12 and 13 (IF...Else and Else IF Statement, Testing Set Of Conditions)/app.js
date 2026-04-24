@@ -15,7 +15,38 @@
 // }
 
 
-// Question_02
-// Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.
-let firstInt = prompt("enter a first Integer");
-let secondInt = prompt("enter a second Integer");
+// // Question_02
+// // Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal.
+// // Answer:
+// let firstInt = parseInt(prompt("Enter a first Integer"));
+// let secondInt = parseInt(prompt("Enter a second Integer"));
+
+// if (firstInt > secondInt) {
+//     console.log("First integer is larger");
+//     console.log(firstInt);
+// } else if (firstInt < secondInt) {
+//     console.log("Second integer is larger");
+//     console.log(secondInt);
+// } else {
+//     console.log("Both integers are equal");
+// }
+
+
+// // Question_03
+// // Write a program that takes input a number from user & state whether the number is positive, negative or zero.
+// // Answer:
+// let userNum = parseFloat(prompt("Enter a positive or negative number or zero"));
+
+// if (userNum > 0) {
+//     console.log("The number is positive");
+// } else if (userNum < 0) {
+//     console.log("The number is negative");
+// } else if (userNum === 0) {
+//     console.log("The number is zero");
+// } else {
+//     console.log("Invalid number");
+// }
+
+
+// Question_04
+// Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise
